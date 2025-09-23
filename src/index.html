@@ -1,13 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP1 - Pablo Carreras</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="navbar" role="banner">
+  <nav class="navbar__inner" aria-label="Primary">
+    <a class="navbar__brand" href="#home">TastyBake</a>
+    <ul class="navbar__menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Products</a></li>
+      <li><a href="#info">Why us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+    <!-- 🟩 Hero Section -->
+  <section class="section section--hero" id="home">
+    <h1>START BOOTSTRAP</h1>
+    <p>Web Developer · Graphic Artist · User Experience Designer</p>
+  </section>
+
+  <!-- 🟥 Portfolio -->
+  <section class="section section--portfolio" id="portfolio">
+    <h2>OUR PRODUCTS</h2>
+    <div class="portfolio-grid">
+    <img src="assets/cake 1.jpg" alt="Cheesecake">
+    <img src="assets/cake 2.jpg" alt="Chocolate cake">
+    <img src="assets/cake 3.jpg" alt="Muffins">
+    <img src="assets/cake 4.jpg" alt="Chocolate Cookies">
+    <img src="assets/cake 5.jpg" alt="Pistachio Croissant">
+    <img src="assets/cake 6.jpg" alt="Chocolate Pastry">
+    </div>
+  </section>
+
+  <!-- 🌀 Carousel Section -->
+  <section class="section section--carousel" id="carousel">
+    <h2>Our Speciality: Croissants</h2>
+    <div class="carousel">
+      <button class="carousel__btn carousel__btn--prev">&#10094;</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+    <!-- Slide 1 -->
+          <li class="carousel__slide">
+              <div class="carousel__content--horizontal">
+                  <div class="carousel__image-wrapper">
+                      <img src="assets/croissant-1.jpg" alt="Classic Croissant">
+                  </div>
+                  <div class="carousel__text">
+                      <h3>Ham & Cheese Croissant</h3>
+                      <p>El croissant tradicional, hojaldrado y mantecoso, perfecto para cualquier ocasión.</p>
+                  </div>
+                  
+                  
+              </div>
+          </li>
+
+
+    <!-- Slide 2 -->
+          <li class="carousel__slide">
+              <div class="carousel__content--horizontal">
+                  <div class="carousel__image-wrapper">
+                      <img src="assets/croissant-2.jpg" alt="Chocolate Croissant">
+                  </div>
+                  <div class="carousel__text">
+                      <h3>Chocolate Croissant</h3>
+                      <p>Relleno de chocolate negro fundido, ideal para quienes aman un desayuno dulce con carácter.</p>
+                  </div>
+              </div>
+          </li>
+
+          <!-- Slide 3 -->
+          <li class="carousel__slide">
+              <div class="carousel__content--horizontal">
+                  <div class="carousel__image-wrapper">
+                      <img src="assets/croissant-3.jpg" alt="Pistachio Croissant">
+                  </div>
+                  <div class="carousel__text">
+                      <h3>Pistachio Croissant</h3>
+                      <p>Nuestra especialidad. Relleno suave de pistacho con topping crujiente. Sabor único y delicado.</p>
+                  </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__btn carousel__btn--next">&#10095;</button>
+    </div>
+
+  </section>
+
+<section class="section section--info" id="info">
+  <h2>Why Choose TastyBake?</h2>
+
+  <div class="info-grid">
+    <!-- Column 1 -->
+    <div class="info-block">
+      <div class="info-icon">
+        <img src="assets/modal1.jpg" alt="Fresh Icon">
+      </div>
+      <h3>Tradition & Quality</h3>
+      <p>Nuestra panadería combina recetas tradicionales con los mejores ingredientes naturales para ofrecerte una experiencia única en cada bocado.</p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="info-block">
+      <div class="info-icon">
+        <img src="assets/modal2.png" alt="Fresh Icon">
+      </div>
+      <h3>Fresh Every Day</h3>
+      <p>Horneamos nuestros productos cada mañana para asegurar frescura absoluta, aroma irresistible y sabor que conquista.</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="info-block">
+      <div class="info-icon">
+        <img src="assets/modal33.jpg" alt="Fresh Icon">
+      </div>
+      <h3>Local & Sustainable</h3>
+      <p>Colaboramos con proveedores locales para garantizar ingredientes sostenibles y apoyar a nuestra comunidad.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- 🟨 Contact -->
+<section class="section section--contact" id="contact">
+    <h2>CONTACT ME</h2>
+  </section>
+
+  <!-- 🟫 Footer -->
+  <footer class="section section--footer">
+    <p>&copy; 2025 Pablo Carreras</p>
+  </footer>
+
+</body>
 </html>
