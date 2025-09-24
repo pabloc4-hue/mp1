@@ -402,7 +402,6 @@ p {
   padding: 2rem;
   border-radius: 0.5rem;
   max-width: 400px;
-  max-height: 90vh;
   width: 100%;
   text-align: center;
   position: relative;
@@ -410,7 +409,7 @@ p {
 }
 .modal .modal-content img {
   width: 100%;
-  max-height: 200px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

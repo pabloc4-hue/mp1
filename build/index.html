@@ -1,44 +1,18 @@
 Html Webpack Plugin:
 <pre>
   Error: Child compilation failed:
-  Module not found: Error: Can't resolve './styles/main.css' in 'C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './styles/main.css' in 'C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\src'
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\Compilation.js:2265:28
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:949:13
-      at eval (eval at create (C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>  :10:1)
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:347:22
-      at eval (eval at create (C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>  :9:1)
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:532:22
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:163:10
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:807:25
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
-      at C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+  Module Error (from ../node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 207, column 25; to line 207, column 31)
+  ModuleError: Module Error (from ../node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 207, column 25; to line 207, column 31)
+      at Object.emitError (C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\webpack\lib\NormalM  odule.js:734:6)
+      at Object.loader (C:\Users\paull\OneDrive\Documentos\UC3M\3 AÑO - UIUC\THE ART OF WEB PROGRAMMING\mp1\node_modules\html-loader\dist\index  .js:59:10)
   
-  - Compilation.js:2265 
-    [mp1]/[webpack]/lib/Compilation.js:2265:28
+  - NormalModule.js:734 Object.emitError
+    [mp1]/[webpack]/lib/NormalModule.js:734:6
   
-  - NormalModuleFactory.js:949 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:949:13
-  
-  
-  - NormalModuleFactory.js:347 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:347:22
-  
-  
-  - NormalModuleFactory.js:532 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:532:22
-  
-  - NormalModuleFactory.js:163 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:163:10
-  
-  - NormalModuleFactory.js:807 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:807:25
-  
-  - NormalModuleFactory.js:1034 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:1034:8
-  
-  - NormalModuleFactory.js:1163 
-    [mp1]/[webpack]/lib/NormalModuleFactory.js:1163:5
+  - index.js:59 Object.loader
+    [mp1]/[html-loader]/dist/index.js:59:10
   
   - child-compiler.js:211 
     [mp1]/[html-webpack-plugin]/lib/child-compiler.js:211:18

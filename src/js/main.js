@@ -102,7 +102,7 @@ document.querySelectorAll(".product-card").forEach(card => {
       modalImg.src = product.img;
       modalTitle.textContent = product.title;
       modalDesc.textContent = product.desc;
-      //modal.classList.add("active");//
+      modal.classList.add("active");//
     }
   });
 });
