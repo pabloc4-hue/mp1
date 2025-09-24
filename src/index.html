@@ -5,6 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MP1 - Pablo Carreras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -13,34 +14,68 @@
 
   <header class="navbar" role="banner">
   <nav class="navbar__inner" aria-label="Primary">
-    <a class="navbar__brand" href="#home">TastyBake</a>
+    <a class="navbar__brand" href="#home">
+      <img src="assets/logo.jpg" alt="TastyBake Logo" class="navbar__logo">
+      <span>TastyBake</span>
+    </a>
+    <!-- Navigation Menu -->
     <ul class="navbar__menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#portfolio">Products</a></li>
-      <li><a href="#info">Why us</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#portfolio" class="nav-link">Products</a></li>
+      <li><a href="#carousel" class="nav-link">Speciality</a></li>
+      <li><a href="#info" class="nav-link">Why us</a></li>
+      <li><a href="#know-us" class="nav-link">Know Us</a></li>
     </ul>
   </nav>
   </header>
 
+
     <!-- 🟩 Hero Section -->
   <section class="section section--hero" id="home">
-    <h1>START BOOTSTRAP</h1>
-    <p>Web Developer · Graphic Artist · User Experience Designer</p>
+    <div class="hero-content">
+      <h1 class="fade-in">Welcome to TastyBake!</h1>
+      <p class="fade-in">"Where tradition meets flavor."</p>
+    </div>
   </section>
+
 
   <!-- 🟥 Portfolio -->
   <section class="section section--portfolio" id="portfolio">
-    <h2>OUR PRODUCTS</h2>
+    <h2 class="fade-in">OUR PRODUCTS</h2>
+
     <div class="portfolio-grid">
-    <img src="assets/cake 1.jpg" alt="Cheesecake">
-    <img src="assets/cake 2.jpg" alt="Chocolate cake">
-    <img src="assets/cake 3.jpg" alt="Muffins">
-    <img src="assets/cake 4.jpg" alt="Chocolate Cookies">
-    <img src="assets/cake 5.jpg" alt="Pistachio Croissant">
-    <img src="assets/cake 6.jpg" alt="Chocolate Pastry">
+      <div class="product-card" data-product="1">
+        <img src="assets/cake 1.jpg" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+      </div>
+
+      <div class="product-card" data-product="2">
+        <img src="assets/cake 2.jpg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+      </div>
+
+      <div class="product-card" data-product="3">
+        <img src="assets/cake 3.jpg" alt="Muffins">
+        <h3>Muffins</h3>
+      </div>
+
+      <div class="product-card" data-product="4">
+        <img src="assets/cake 4.jpg" alt="Chocolate Cookies">
+        <h3>Chocolate Cookies</h3>
+      </div>
+
+      <div class="product-card" data-product="5">
+        <img src="assets/cake 5.jpg" alt="Pistachio Croissant">
+        <h3>Croissants</h3>
+      </div>
+
+      <div class="product-card" data-product="6">
+        <img src="assets/cake 6.jpg" alt="Chocolate Pastry">
+        <h3>Chocolate Pastry</h3>
+      </div>
     </div>
   </section>
+
 
   <!-- 🌀 Carousel Section -->
   <section class="section section--carousel" id="carousel">
@@ -57,7 +92,7 @@
                   </div>
                   <div class="carousel__text">
                       <h3>Ham & Cheese Croissant</h3>
-                      <p>El croissant tradicional, hojaldrado y mantecoso, perfecto para cualquier ocasión.</p>
+                      <p>Savory layers of ham and melted cheese baked into golden dough.Perfectly balanced for breakfast or a light lunch.Warm, filling, and freshly baked each morning.</p>
                   </div>
                   
                   
@@ -73,7 +108,7 @@
                   </div>
                   <div class="carousel__text">
                       <h3>Chocolate Croissant</h3>
-                      <p>Relleno de chocolate negro fundido, ideal para quienes aman un desayuno dulce con carácter.</p>
+                      <p>Flaky pastry wrapped around rich dark chocolate bars.Crisp on the outside, warm and melty inside.A timeless favorite for every chocolate lover.</p>
                   </div>
               </div>
           </li>
@@ -86,7 +121,7 @@
                   </div>
                   <div class="carousel__text">
                       <h3>Pistachio Croissant</h3>
-                      <p>Nuestra especialidad. Relleno suave de pistacho con topping crujiente. Sabor único y delicado.</p>
+                      <p>A delicate, buttery croissant filled with smooth pistachio cream.Topped with crushed pistachios for texture and rich aroma.Elegant and nutty—an indulgent twist on a French classic.</p>
                   </div>
               </div>
           </li>
@@ -107,7 +142,7 @@
         <img src="assets/modal1.jpg" alt="Fresh Icon">
       </div>
       <h3>Tradition & Quality</h3>
-      <p>Nuestra panadería combina recetas tradicionales con los mejores ingredientes naturales para ofrecerte una experiencia única en cada bocado.</p>
+      <p>We honor traditional baking methods passed down through generations.Each product is handcrafted with care and attention to detail.Only premium ingredients make it into our recipes.</p>
     </div>
 
     <!-- Column 2 -->
@@ -116,7 +151,7 @@
         <img src="assets/modal2.png" alt="Fresh Icon">
       </div>
       <h3>Fresh Every Day</h3>
-      <p>Horneamos nuestros productos cada mañana para asegurar frescura absoluta, aroma irresistible y sabor que conquista.</p>
+      <p>Our baked goods are made daily to ensure maximum freshness.Straight from the oven to your hands—warm, soft, and full of flavor.You will taste the difference in every bite.</p>
     </div>
 
     <!-- Column 3 -->
@@ -125,20 +160,56 @@
         <img src="assets/modal33.jpg" alt="Fresh Icon">
       </div>
       <h3>Local & Sustainable</h3>
-      <p>Colaboramos con proveedores locales para garantizar ingredientes sostenibles y apoyar a nuestra comunidad.</p>
+      <p>We source locally to support our community and reduce our footprint.Sustainable practices guide every step of our baking process.Good for you, good for the planet.</p>
     </div>
   </div>
 </section>
 
-  <!-- 🟨 Contact -->
-<section class="section section--contact" id="contact">
-    <h2>CONTACT ME</h2>
-  </section>
+  <!-- 🟨 know-us -->
+    <section class="section section--video" id="know-us">
+      <h2>Know Us Better</h2>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/c0h1Lgo1_VA" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+
 
   <!-- 🟫 Footer -->
-  <footer class="section section--footer">
-    <p>&copy; 2025 Pablo Carreras</p>
-  </footer>
+    <footer class="footer">
+      &copy; Pablo Carreras
+      <div class="footer__social-list">
+        <div class="social-item">
+          <img src="assets/icons/instagram.jpg" alt="Instagram icon">
+          <span>Instagram</span>
+        </div>
+        <div class="social-item">
+          <img src="assets/icons/facebook.jpg" alt="Facebook icon">
+          <span>Facebook</span>
+        </div>
+        <div class="social-item">
+          <img src="assets/icons/tik tok.png" alt="tik tok icon">
+          <span>TikTok</span>
+        </div>
+      </div>
+    </footer>
+
+
+/* Modal Structure */
+
+<div class="modal" id="product-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+  </div>
+</div>
 
 </body>
 </html>
